@@ -142,17 +142,16 @@ def send_sms_alert(job):
 
 {job['url']}
 
+message_body = f"""🚨 NEW JOB ALERT!
+
+{job['title']}
+{job['company']}
+{job['location']}
+
+{job['url']}
+
 Found via: {job['search_term']}
 """
-        
-        message = client.messages.create(
-            body=message_body,
-            from_=TWILIO_PHONE_NUMBER,
-            to=PHONE_NUMBER
-        )
-        
-        print(f"✅ SMS sent successfully! SID: {message.sid}")
-        return True
         
     except Exception as e:
         print(f"❌ Error sending SMS: {e}")

@@ -63,10 +63,11 @@ def search_jobs(job_title):
     }
     
     params = {
-        "query": f"{job_title} remote",
-        "page": "1",
-        "num_pages": "1",
-        "date_posted": "today"
+    "query": f"{job_title}",
+    "page": "1",
+    "num_pages": "1",
+    "date_posted": "today",
+    "remote_jobs_only": "true"
     }
     
     try:

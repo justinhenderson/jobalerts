@@ -211,7 +211,7 @@ if __name__ == "__main__":
 
 ### **File 2: requirements.txt**
 
-1. Click **"Add file"** → **"Create new file"** again
+1. Click **"Add file"** to **"Create new file"** again
 2. Name it: `requirements.txt`
 3. Paste:
 ```

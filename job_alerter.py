@@ -68,6 +68,7 @@ def search_jobs(job_title):
     "num_pages": "1",
     "date_posted": "today",
     "remote_jobs_only": "true"
+    "job_publishers": "Indeed,LinkedIn"
     }
     
     try:
